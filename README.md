@@ -9,70 +9,53 @@ Ini adalah API untuk aplikasi booking online tiket
 ## 🔐 A. User & Authentication
 
 1. Registrasi & login user
-    - Role:
-    1. Admin
-    2. Operator Bus
-    3. Customer
+    * Role:
+    - Admin
+    - Operator Bus
+    - Customer
 
 2. Manajemen profil user
-    - Reset password
-    - Token auth (JWT / Session)
+    * Reset password
+    * Token auth (JWT / Session)
 
 ## 🚌 B. Manajemen Bus
 
-CRUD data bus
+1. CRUD data bus
+    * Kapasitas kursi
+    * Tipe bus (Ekonomi, Bisnis, Executive)
+    * Status bus (aktif / maintenance)
 
-Kapasitas kursi
+## 🛣️ C. Rute & Jadwal
 
-Tipe bus (Ekonomi, Bisnis, Executive)
+1. Manajemen kota asal & tujuan
+    * Jadwal keberangkatan
+    * Harga tiket per rute
+    * Estimasi durasi perjalanan
 
-Status bus (aktif / maintenance)
+# 🪑 D. Manajemen Kursi
 
-🛣️ C. Rute & Jadwal
+1. Layout kursi (A1, A2, B1, dst)
+2. Status kursi:
+    * Available
+    * Reserved
+    * Booked
+    * Lock kursi sementara (anti double booking)
 
-Manajemen kota asal & tujuan
+## 🎫 E. Booking Tiket
 
-Jadwal keberangkatan
+1. Pilih rute & jadwal
+    * Pilih kursi
+    * Booking multi-penumpang
 
-Harga tiket per rute
+2. Status booking:
+    * Pending
+    * Paid
+    * Cancelled
+    * Expired
 
-Estimasi durasi perjalanan
+3. Generate kode booking
 
-🪑 D. Manajemen Kursi
-
-Layout kursi (A1, A2, B1, dst)
-
-Status kursi:
-
-Available
-
-Reserved
-
-Booked
-
-Lock kursi sementara (anti double booking)
-
-🎫 E. Booking Tiket
-
-Pilih rute & jadwal
-
-Pilih kursi
-
-Booking multi-penumpang
-
-Status booking:
-
-Pending
-
-Paid
-
-Cancelled
-
-Expired
-
-Generate kode booking
-
-💳 F. Pembayaran
+## 💳 F. Pembayaran
 
 Metode pembayaran (Transfer, E-Wallet, VA)
 
