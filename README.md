@@ -92,3 +92,16 @@ Booking berhasil
 Pembayaran sukses
 
 Reminder keberangkatan
+
+# 2️⃣ SYSTEM INSTALLATION
+
+## Install Kebutuhan
+1. Install Django
+```bash
+pip install django
+```
+2. Install Rest Framework & JWT
+```bash
+pip install djangorestframework
+pip install djangorestframework-simplejwt
+```
